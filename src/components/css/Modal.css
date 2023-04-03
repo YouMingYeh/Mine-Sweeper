@@ -1,0 +1,92 @@
+/****************************************************************************
+  FileName      [ Modal.css ]
+  PackageName   [ src/components/css ]
+  Author        [ Cheng-Hua Lu ]
+  Synopsis      [ This file set the style of Modal. ]
+  Copyright     [ 2022 10 ]
+****************************************************************************/
+
+* {
+  font-family: "Futura";
+}
+
+.visible {
+  opacity: 1 !important;
+}
+
+.modal {
+  z-index: 1;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 2s;
+}
+
+.modalWrapper {
+  height: 25%;
+}
+
+.modalContent {
+  box-shadow: 3px 3px 3px black;
+  margin: auto 25%;
+  justify-content: center;
+  text-align: center;
+  height: 40%;
+  width: auto;
+  padding: auto;
+  background-color: lightblue;
+  border-radius: 25px;
+}
+
+.modalResult {
+  text-shadow: 1px 1px 1px black;
+  color: #0f0f4b;
+  width: 100%;
+  margin: auto;
+  font-size: 50px;
+  font-weight: 700;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBtnWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.modalBtn {
+  background-color: #0f0f4b;
+  color: lightblue;
+  border: 3px solid transparent;
+  font-size: 25px;
+  font-weight: 300;
+  border-radius: 25px;
+  height: 60%;
+  width: 50%;
+  margin: auto 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBtn:hover {
+  box-shadow: 3px 3px 3px black;
+  cursor: pointer;
+  color: #0f0f4b;
+  background-color: lightblue;
+  border: 3px solid #0f0f4b;
+  transform: translate(-7px, -7px);
+  transition: all 0.5s ease-in-out;
+}

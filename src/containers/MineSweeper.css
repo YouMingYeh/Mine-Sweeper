@@ -1,0 +1,25 @@
+/****************************************************************************
+  FileName      [ MineSweeper.css ]
+  PackageName   [ src/containers ]
+  Author        [ Cheng-Hua Lu ]
+  Synopsis      [ This file set the style of MineSweeper. ]
+  Copyright     [ 2022 10 ]
+****************************************************************************/
+
+.mineSweeper {
+  /* position:absolute; */
+  display: "flex";
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 1;
+  /* transition: all 1s;
+  filter: blur(10px);
+  transform: translateX(-100%); */
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}

@@ -1,0 +1,41 @@
+/****************************************************************************
+  FileName      [ App.css ]
+  PackageName   [ src ]
+  Author        [ Cheng-Hua Lu ]
+  Synopsis      [  ]
+  Copyright     [ 2022 10 ]
+****************************************************************************/
+
+* {
+  font-family: "Futura";
+}
+
+html,
+body {
+  height: 100%;
+
+  /* background: rgba(76, 175, 80, 0.3) */
+}
+
+#image {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  background-image: url("https://files.realpython.com/media/Arcade-vs-PyGame_Watermarked.7e349a93249c.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+.App {
+  display: "flex";
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* position: absolute; */
+}
